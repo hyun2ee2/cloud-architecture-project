@@ -1,6 +1,6 @@
 package com.caproject.member.controller;
 
-import com.caproject.member.dto.MemberResponse;
+import com.caproject.member.dto.GetMemberResponse;
 import com.caproject.member.entity.Member;
 import com.caproject.member.service.MemberService;
 import lombok.RequiredArgsConstructor;
@@ -24,7 +24,7 @@ public class MemberController {
 
     // 멤버 조회
     @GetMapping("/{id}")
-    public MemberResponse getMember(@PathVariable Long id) {
+    public GetMemberResponse getMember(@PathVariable Long id) {
         return memberService.findById(id);
     }
 }
