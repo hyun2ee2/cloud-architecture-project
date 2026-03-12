@@ -1,4 +1,6 @@
 spring:
+  config:
+    import: "optional:aws-parameterstore:"
   datasource:
     url: jdbc:h2:mem:testdb
     driver-class-name: org.h2.Driver
@@ -21,3 +23,7 @@ spring:
         static: ap-northeast-2
       s3:
         bucket: ca-project-hong2ee2-files
+
+S3_BUCKET_NAME: test-bucket
+APP_MESSAGE: local-test
+TEAM-NAME: local-team
