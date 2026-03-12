@@ -57,4 +57,5 @@ jobs:
             docker run -d -p 8080:8080 \
             --name ca-project \
             -e SPRING_CLOUD_AWS_S3_BUCKET=test-bucket \
+            -e SPRING_PROFILES_ACTIVE=prod \
             hyun2ee/ca-project
